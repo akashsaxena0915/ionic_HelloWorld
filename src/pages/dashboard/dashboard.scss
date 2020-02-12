@@ -1,11 +1,38 @@
 page-dashboard {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('../../assets/imgs/loginimg.jpg');
+   
 
 }
 
+.bg-image {
+    background: url('../../assets/loginimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
 .container {
     position: relative;
     align-content: center;
+    text-align: center;
+}
+
+.container input {
+    border-radius: 10px;
+    border: groove 2px;
+    width: 80%;
+    height:2em;
+    text-align: center;
+    color:#e9e9f1;
+}
+
+
+.txtlabel {
+    color:#e9e9f1;
+    font-style: normal;
 }
 
 .bttn {
+ font-size:20px;
+ border-radius: 10px;
+ background-color:#003d99;
 }
