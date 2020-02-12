@@ -1,38 +1,48 @@
-page-dashboard {
-    font-size: 20px; 
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url('../../assets/imgs/loginimg.jpg');
-   
-
+.bg-image {
+  background: url("../../assets/imgs/loginpic.png") no-repeat center center fixed;
+  background-size: cover;
+  font-size: 20px;
 }
 
-.bg-image {
-    background: url('../../assets/loginimg.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
 .container {
-    position: relative;
-    align-content: center;
-    text-align: center;
+  position: relative;
+  align-content: center;
+  text-align: center;
 }
 
 .container input {
-    border-radius: 10px;
-    border: groove 2px;
-    width: 80%;
-    height:2em;
-    text-align: center;
-    color:#e9e9f1;
+  border-radius: 10px;
+  border: groove 2px;
+  width: 80%;
+  height: 2.2em;
+  text-align: center;
+  color: #e9e9f1;
+  font-size: 17px;
+}
+.container input:hover {
+  border-radius: 10px;
+  border: groove 2px;
+  width: 85%;
+  height: 2.4em;
+  text-align: center;
+  color: #e9e9f1;
+}
+.container p a {
+  color: #e9e9f1;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-
 .txtlabel {
-    color:#e9e9f1;
-    font-style: normal;
+  color: #e9e9f1;
+  font-style: normal;
 }
 
 .bttn {
- font-size:20px;
- border-radius: 10px;
- background-color:#003d99;
+  width: 100px;
+  height: 2em;
+  border-radius: 10px;
+  background-color: #0749ac;
 }
+
+
