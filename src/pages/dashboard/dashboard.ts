@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
-/**
- * Generated class for the DashboardPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,11 +10,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DashboardPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  /**private veribale for login details */
+  public userLoginForm: FormGroup;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public fb: FormBuilder
+  ) {
+    this.initlogInUser();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DashboardPage');
   }
+  /** initilizing Form */
+  private initlogInUser(): void {
+    this.userLoginForm = this.fb.group({
+      userName: [''],
+      password: ['']
+    });
+  }
 
+  onSubmit(): void {
+    console.log(this.userLoginForm);
+  }
 }

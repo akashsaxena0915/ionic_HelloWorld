@@ -1,17 +1,12 @@
-
-<ion-header>
-  <ion-navbar>
-    <ion-title>dashboard</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding class="bg-image">
   <div class="container">
-    <ion-label class="txtlabel"><b>Username</b></ion-label>
-    <ion-input type="text" placeholder="Username"></ion-input>
-    <ion-label class="txtlabel"><b>Password</b></ion-label>
-    <ion-input type="password" placeholder="Password"></ion-input>
-    <button ion-button class="bttn">Login</button>
+    <form [formGroup]="userLoginForm"  (submit)="onSubmit()">
+      <ion-label class="txtlabel"><b>Username</b></ion-label>
+      <ion-input type="text" placeholder="Username" formControlName="userName"></ion-input>
+      <ion-label class="txtlabel"><b>Password</b></ion-label>
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+        <button ion-button class="bttn">Login</button>
+    </form>
     <p><a href=#>need an account ?</a></p>
   </div>
 </ion-content>
